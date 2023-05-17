@@ -21,21 +21,26 @@ class Data
   private array $data;
   private array $fillable;
 
-  public function title($title): void
+  public function title($title)
   {
     $this->fillable['title'] = $title;
   }
 
-  public function format(): void
+  public function format()
   {
     $this->data = array();
     $this->fillable = array();
   }
 
-  public function get(): array
+  public function get()
   {
     $data = array_merge($this->fillable, $this->data);
     return $data;
+  }
+
+  public function find($attribute)
+  {
+    return $this->data[$attribute] ?? $this->fillable[$attribute] ?? null;
   }
 
   public function set($key, $value)
