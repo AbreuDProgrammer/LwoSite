@@ -28,7 +28,7 @@
           <h3>Computer programmer</h3>
         </div>
         <div class="space-y-4 rounded border-2 p-4">
-          <h2><a href="https://nearsoft.pt/">Dimmersions</a></h2>
+          <h2><a href="https://www.dimmersions.com/">Dimmersions</a></h2>
           <h3>Computer programmer</h3>
         </div>
       </div>
