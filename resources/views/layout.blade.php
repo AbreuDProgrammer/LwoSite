@@ -7,8 +7,8 @@
   @vite('resources/css/app.css')
   <title>{{$title}}</title>
 </head>
-<body class="text-white w-full">
-  <nav class="fixed top-0 left-0 w-full h-12 bg-sky-950 grid grid-cols-4 content-center px-4">
+<body class="h-full">
+  <nav class="fixed top-0 left-0 w-full h-12 grid grid-cols-4 content-center px-6 bg-white">
     <div>
       <h4><a href="{{route('welcome')}}">Homepage</a></h4>
     </div>
@@ -25,7 +25,7 @@
   <main class="pt-12">
     @yield('body')
   </main>
-  <footer class="h-12 w-full bg-black flex items-center justify-start p-4">
+  <footer class="h-12 w-full bg-black flex items-center justify-start p-4 text-white bottom-0 absolute">
     <h6>Made by Leonardo</h6>
   </footer>
 </body>
