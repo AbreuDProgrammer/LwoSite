@@ -21,4 +21,9 @@
   h6 {
     @apply text-xl;
   }
+
+  a {
+    @apply text-blue-500;
+    @apply cursor-pointer;
+  }
 }
