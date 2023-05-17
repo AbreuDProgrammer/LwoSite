@@ -16,5 +16,8 @@
   <main class="pt-12">
     @yield('body')
   </main>
+  <footer class="fixed bottom-0 left-0 h-12 w-full bg-black flex items-center justify-start p-4">
+    <h6>Made by Leonardo</h6>
+  </footer>
 </body>
 </html>
