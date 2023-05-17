@@ -6,7 +6,21 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
+use App\Helpers\Data;
+
 class Controller extends BaseController
 {
-    use AuthorizesRequests, ValidatesRequests;
+  use AuthorizesRequests, ValidatesRequests;
+
+  protected Data $data;
+
+  public function __construct()
+  {
+    $this->data = Data::getInstance();
+  }
+
+  protected function view($page)
+  {
+    return view($page, $this->data->get());
+  }
 }

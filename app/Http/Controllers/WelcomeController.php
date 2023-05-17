@@ -8,6 +8,7 @@ class WelcomeController extends Controller
 {
   public function index()
   {
-    return view('welcome', array('title' => "Welcome to Lwo's website!"));
+    $this->data->title("Welcome to Lwo's website!");
+    return $this->view('welcome');
   }
 }
