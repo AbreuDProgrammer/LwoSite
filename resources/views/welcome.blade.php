@@ -8,28 +8,26 @@
     <img src="{{asset('images/me.png')}}" alt="Me" class="object-none object-top w-full h-80">
   </nav>
   <div class="px-0">
-    <div class="w-full p-4 bg-slate-900 space-y-12">
-      <h1>Projects:</h1>
-      <div class="grid grid-cols-4 gap-4">
-        <x-project/>
-        <x-project/>
-        <x-project/>
-        <x-project/>
-        <x-project/>
-        <x-project/>
-        <x-project/>
-      </div>
-    </div>
     <div class="w-full p-4 bg-slate-800 space-y-8 py-12">
       <h1>Work experience:</h1>
       <div class="grid grid-cols-2 gap-4">
-        <div class="space-y-4 rounded border-2 p-4">
-          <h2><a href="https://nearsoft.pt/">Nearsoft</a></h2>
-          <h3>Computer programmer</h3>
+        <div class="rounded border-2 p-4 grid grid-cols-2">
+          <div>
+            <h2><a href="https://nearsoft.pt/">Nearsoft</a></h2>
+            <h3>Computer programmer</h3>
+          </div>
+          <div class="flex flex-row items-center justify-end">
+            <img src="{{asset('images/nearsoft.jpg')}}" alt="Nearsoft logo" class="rounded-full object-contain h-24">
+          </div>
         </div>
-        <div class="space-y-4 rounded border-2 p-4">
-          <h2><a href="https://www.dimmersions.com/">Dimmersions</a></h2>
-          <h3>Computer programmer</h3>
+        <div class="rounded border-2 p-4 grid grid-cols-2">
+          <div>
+            <h2><a href="https://www.dimmersions.com/">Dimmersions</a></h2>
+            <h3>Computer programmer</h3>
+          </div>
+          <div class="flex flex-row items-center justify-end">
+            <img src="{{asset('images/dimmersions.jpg')}}" alt="Nearsoft logo" class="rounded-full object-contain h-24">
+          </div>
         </div>
       </div>
     </div>

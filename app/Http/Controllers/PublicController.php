@@ -17,4 +17,10 @@ class PublicController extends Controller
     $this->data->title("About me");
     return $this->view('about');
   }
+
+  public function projects()
+  {
+    $this->data->title("My projects");
+    return $this->view('projects');
+  }
 }
