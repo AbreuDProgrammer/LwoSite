@@ -1,6 +1,6 @@
 @extends('layout')
 @section('body')
-<div class="grid grid-cols-3 py-6">
+  <div class="grid grid-cols-3">
     <div class="w-full flex items-end justify-center">
       <img src="{{asset('images/alsome.jpg')}}" alt="Me again" class="rounded">
     </div>
