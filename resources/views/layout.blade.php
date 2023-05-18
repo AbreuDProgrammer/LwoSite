@@ -18,9 +18,13 @@
     <div class="text-center">
       <h5><a href="{{route('projects')}}">@lang('Projects')</a></h5>
     </div>
-    <div class="flex justify-center space-x-6">
-      <h5><a href="{{route('lang', ['lang' => 'en'])}}">En</a></h5>
-      <h5><a href="{{route('lang', ['lang' => 'pt'])}}">Pt</a></h5>
+    <div class="flex justify-center items-center space-x-4">
+      <a href="{{route('lang', ['lang' => 'en'])}}" class="">
+        <img src="{{asset('images/uk.jpg')}}" alt="USA flag" class="object-contain rounded h-6 w-10">
+      </a>
+      <a href="{{route('lang', ['lang' => 'pt'])}}" class="">
+        <img src="{{asset('images/br.jpg')}}" alt="Brazil flag" class="object-contain rounded h-6 w-12">
+      </a>
     </div>
   </nav>
   <main class="pt-24 px-72">
