@@ -4,12 +4,13 @@
     <div class="w-full flex items-end justify-center">
       <img src="{{asset('images/alsome.jpg')}}" alt="Me again" class="rounded">
     </div>
-    <div class="flex flex-col items-start justify-start space-y-4 px-12 col-span-2">
-      <h2>@lang('My name is Leonardo')</h2>
+    <div class="flex flex-col items-start justify-start px-12 col-span-2">
+      <h2 class="pb-6">@lang('Hello World')</h2>
       <p class="text-xl">
-          @lang('I was born in December 2005 in Brazil, and I moved to Portugal in 2019 after completing the 8th grade. In 2020, I started studying as a computer programmer.')<br><br>
-          @lang('Currently, I have already completed internships at two influential companies in Portugal, participated in the Europe Immerse Global Summit in 2022, and I am hired to work at one of the companies where I interned.')<br><br>
-          @lang('For the future, I will finish my final course project, start working at the company, and then I plan to attend university to study computer engineering.')<br><br>
+          @lang("My name is Leonardo. I'm a programmer from São Paulo, Brazil, currently living in Portugal and completing my graduation.")<br><br>
+          @lang("I have a job at an influential programming company in Portugal, and I'm planning to continue my studies.")<br><br>
+          @lang("I am familiar with several programming languages, and I can easily learn new ones. I enjoy learning new design patterns and implementing them in my projects.")<br><br>
+          @lang("In the future, I hope to enhance my programming knowledge through work experience, and I am also planning to move to another country to improve my English skills.")<br><br>
       </p>
     </div>
   </div>
