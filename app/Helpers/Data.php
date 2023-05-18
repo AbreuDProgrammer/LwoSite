@@ -31,6 +31,11 @@ class Data
     $this->fillable['current'] = $current;
   }
 
+  public function lang($lang)
+  {
+    $this->fillable['lang'] = $lang;
+  }
+
   public function format()
   {
     $this->data = array();

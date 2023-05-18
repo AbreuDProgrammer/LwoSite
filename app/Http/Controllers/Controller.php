@@ -25,6 +25,7 @@ class Controller extends BaseController
   protected function view($page)
   {
     $this->data->current($this->current->get($page));
+    $this->data->lang(app()->getLocale());
     return view($page, $this->data->get());
   }
 }
