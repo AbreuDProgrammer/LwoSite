@@ -7,8 +7,8 @@
   @vite('resources/css/app.css')
   <title>{{$title}}</title>
 </head>
-<body class="h-full bg-black/95 text-white">
-  <nav class="fixed top-0 left-0 h-16 grid grid-cols-4 content-center w-full px-96">
+<body class="h-full bg-theme text-white">
+  <nav class="fixed bg-theme top-0 left-0 h-16 grid grid-cols-4 content-center w-full px-96">
     <div class="text-center @if($current['home']) underline @endif">
       <h5><a href="{{route('welcome')}}">@lang('Home')</a></h5>
     </div>
@@ -19,18 +19,18 @@
       <h5><a href="{{route('projects')}}">@lang('Projects')</a></h5>
     </div>
     <div class="flex justify-center items-center space-x-4">
-      <a href="{{route('lang', ['lang' => 'en'])}}" class="">
-        <img src="{{asset('images/uk.jpg')}}" alt="USA flag" class="object-contain rounded h-6 w-10">
+      <a href="{{route('lang', ['lang' => 'en'])}}">
+        <img src="{{asset('images/uk.jpg')}}" alt="USA flag" class="object-contain rounded h-6">
       </a>
-      <a href="{{route('lang', ['lang' => 'pt'])}}" class="">
-        <img src="{{asset('images/br.jpg')}}" alt="Brazil flag" class="object-contain rounded h-6 w-12">
+      <a href="{{route('lang', ['lang' => 'pt'])}}">
+        <img src="{{asset('images/br.jpg')}}" alt="Brazil flag" class="object-contain rounded h-7">
       </a>
     </div>
   </nav>
   <main class="pt-24 px-72">
     @yield('body')
   </main>
-  <footer class="h-12 w-full flex items-center justify-start p-4 text-white bottom-0 absolute">
+  <footer class="h-12 w-full flex items-center justify-start p-4 text-white">
     <h6>@lang('Made by Leonardo')</h6>
   </footer>
 </body>
