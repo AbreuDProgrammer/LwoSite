@@ -11,7 +11,7 @@
   </nav>
   <div class="">
     <h3 class="py-4">@lang('Skills:')</h3>
-    <div class="grid gap-6">
+    <div class="grid grid-cols-2 gap-6">
       
       <div>
         <div class="pb-6 flex items-end justify-start space-x-6">
