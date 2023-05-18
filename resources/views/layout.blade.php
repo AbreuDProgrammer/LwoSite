@@ -22,7 +22,7 @@
       <h5><a href="{{route('projects')}}">Github</a></h5>
     </div>
   </nav>
-  <main class="pt-16">
+  <main class="pt-16 px-72">
     @yield('body')
   </main>
   <footer class="h-12 w-full flex items-center justify-start p-4 text-white bottom-0 absolute">
