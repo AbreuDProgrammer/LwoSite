@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\LanguageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,8 @@ use App\Http\Controllers\PublicController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/lang/{lang}', [LanguageController::class, 'index'])->name('lang');
 
 Route::get('/', [PublicController::class, 'index'])->name('welcome');
 Route::get('/about', [PublicController::class, 'about'])->name('about');

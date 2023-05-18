@@ -10,7 +10,7 @@
     </div>
   </nav>
   <div class="">
-    <h3 class="py-4">Main Projects:</h3>
+    <h3 class="py-4">@lang('Main Projects:')</h3>
     <div class="grid grid-cols-3 gap-4">
       <x-project/>
       <x-project/>
