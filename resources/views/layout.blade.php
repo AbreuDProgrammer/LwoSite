@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
     <div class="text-center @if($current['projects']) underline @endif">
       <h5><a href="{{route('projects')}}">@lang('Projects')</a></h5>
     </div>
-    <div class="flex justify-center items-center space-x-4">
+    <div class="flex justify-center items-center">
       @if ($lang == 'en')
         <a href="{{route('lang', ['lang' => 'pt'])}}">
           <img src="{{asset('images/br.jpg')}}" alt="Brazil flag" class="object-contain rounded h-7">
@@ -32,7 +32,7 @@
     </div>
   </nav>
 
-  <main class="pt-24 pb-12 xl:px-72">
+  <main class="xl:pt-24 pt-16 pb-12 xl:px-72">
     @yield('body')
   </main>
 

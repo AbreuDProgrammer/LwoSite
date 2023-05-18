@@ -1,12 +1,13 @@
 @extends('layout')
 @section('body')
-  <div class="grid grid-cols-3">
-    <div class="w-full flex items-end justify-center">
+
+  <div class="grid xl:grid-cols-3 w-full">
+    <div class="w-full flex xl:items-end p-6 xl:p-0 items-center justify-center">
       <img src="{{asset('images/alsome.jpg')}}" alt="Me again" class="rounded">
     </div>
-    <div class="flex flex-col items-start justify-start px-12 col-span-2">
+    <div class="flex flex-col items-start justify-start px-12 xl:col-span-2">
       <h2 class="pb-6">@lang('Hello World')</h2>
-      <p class="text-xl">
+      <p>
           @lang("My name is Leonardo. I'm a programmer from São Paulo, Brazil, currently living in Portugal and completing my graduation.")<br><br>
           @lang("I have a job at an influential programming company in Portugal, and I'm planning to continue my studies.")<br><br>
           @lang("I am familiar with several programming languages, and I can easily learn new ones. I enjoy learning new design patterns and implementing them in my projects.")<br><br>
@@ -14,10 +15,11 @@
       </p>
     </div>
   </div>
-  <div class="py-6">
-    <div class="grid grid-cols-1 gap-6">
 
-      <div class="grid grid-cols-2 gap-4">
+  <div class="py-6">
+    <div class="grid grid-cols-1 gap-6 px-12">
+
+      <div class="grid xl:grid-cols-2 gap-4">
         <div>
           <h2 class="pb-6">@lang('Gym')</h2>
           <p>
@@ -35,21 +37,20 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid xl:grid-cols-2 gap-4">
         <img src="{{asset('images/music.jpg')}}" alt="Pulse show" class="rounded-xl">
-        <div class="h-min">
+        <div class="h-min order-first">
           <h2 class="pb-6">@lang('Music')</h2>
           <p>
             @lang('Music has been an important part of my life since forever.') <br><br>
             @lang('I grew up listening to classic Brazilian and foreign music. Wherever I go, I carry headphones with me and several downloaded songs.') <br><br>
             @lang('My favorite music genres are pop, rock, and jazz, and almost anything that originates from them. I have an open mind to new bands and new styles.') <br><br>
-            @lang('I enjoy sharing my musical tastes with others and discovering new songs.') <br><br>
             @lang('The Weeknd, Lana Del Rey, Pink Floyd, The Alan Parsons Project, Tyler, The Creator, and Arctic Monkeys are always among the most played songs of the day.')
           </p>
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid xl:grid-cols-2 gap-4">
         <div class="h-min">
           <h2 class="pb-6">@lang('Travel')</h2>
           <p class="pr-6">
@@ -63,7 +64,8 @@
 
     </div>
   </div>
-  <div class="grid grid-cols-3 gap-4 justify-items-center py-6 [&>a]:grid [&>a]:grid-cols-2 [&>a]:gap-2 [&>a]:w-full [&>a>h4]:flex [&>a>h4]:items-end">
+
+  <div class="grid xl:grid-cols-3 gap-4 justify-items-center py-6 [&>a]:flex xl:[&>a]:justify-center [&>a]:justify-start [&>a]:pl-12 xl:[&>a]:pl-0 [&>a]:space-x-4 [&>a]:items-center [&>a]:w-full [&>a>h4]:flex [&>a>h4]:items-end">
     <a href="https://github.com/AbreuDProgrammer" target="_blank">
       <h4>@lang('Github')</h4>
       <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
