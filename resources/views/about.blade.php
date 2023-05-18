@@ -14,6 +14,55 @@
       </p>
     </div>
   </div>
+  <div class="py-6">
+    <div class="grid grid-cols-1 gap-6">
+
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <h2 class="pb-6">@lang('Gym')</h2>
+          <p>
+            @lang('Going to the gym has become a very important part of my life, a place of socializing for people who strive for a better and healthier lifestyle through effort.') <br><br>
+            @lang('There is no easy way to achieve gains, there are no better or worse ones, there are only those who are more hardworking and consistent.') <br><br>
+            @lang('This lifestyle demands more effort, is more painful, and requires more energy, but seeing how my body improves in terms of strength and aesthetics is priceless.')
+          </p>
+        </div>
+        <div class="grid grid-cols-3 gap-4 justify-items-start">
+          <img src="{{asset('images/gym.jpg')}}" alt="Arnold pose picture" class="rounded">
+          <img src="{{asset('images/zyzz.jpg')}}" alt="Zyzz pose picture" class="rounded">
+          <div class="flex items-end justify-end">
+            <img src="{{asset('images/lean.jpg')}}" alt="LeanBeefPatty pose picture" class="rounded">
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4">
+        <img src="{{asset('images/music.jpg')}}" alt="Pulse show" class="rounded-xl">
+        <div class="h-min">
+          <h2 class="pb-6">@lang('Music')</h2>
+          <p>
+            @lang('Music has been an important part of my life since forever.') <br><br>
+            @lang('I grew up listening to classic Brazilian and foreign music. Wherever I go, I carry headphones with me and several downloaded songs.') <br><br>
+            @lang('My favorite music genres are pop, rock, and jazz, and almost anything that originates from them. I have an open mind to new bands and new styles.') <br><br>
+            @lang('I enjoy sharing my musical tastes with others and discovering new songs.') <br><br>
+            @lang('The Weeknd, Lana Del Rey, Pink Floyd, The Alan Parsons Project, Tyler, The Creator, and Arctic Monkeys are always among the most played songs of the day.')
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4">
+        <div class="h-min">
+          <h2 class="pb-6">@lang('Travel')</h2>
+          <p class="pr-6">
+            @lang('But if I had to choose one, my favorite hobby is definitely traveling.') <br><br>
+            @lang('I enjoy everything about traveling, from planning the flights and packing my suitcase to the feeling of leaving the house locked up. I love the excitement of arriving at the airport, the journey on the plane, and immersing myself in a new culture in a new country with new sights and cuisine.') <br><br>
+            @lang("So far, I haven't traveled to many places, but I have several photographs of where I've been, and I'm definitely going to see the whole world when I start having my own money.")
+          </p>
+        </div>
+        <img src="{{asset('images/travel.jpg')}}" alt="Pulse show" class="rounded">
+      </div>
+
+    </div>
+  </div>
   <div class="grid grid-cols-3 gap-4 justify-items-center py-6 [&>a]:grid [&>a]:grid-cols-2 [&>a]:gap-2 [&>a]:w-full [&>a>h4]:flex [&>a>h4]:items-end">
     <a href="https://github.com/AbreuDProgrammer" target="_blank">
       <h4>@lang('Github')</h4>
