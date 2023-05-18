@@ -8,18 +8,18 @@
   <title>{{$title}}</title>
 </head>
 <body class="h-full">
-  <nav class="fixed top-0 left-0 w-full h-12 grid grid-cols-4 content-center px-6 bg-white">
-    <div>
-      <h4><a href="{{route('welcome')}}">Homepage</a></h4>
+  <nav class="fixed top-0 left-0 h-12 grid grid-cols-4 content-center w-full px-96 bg-white">
+    <div class="text-center">
+      <h4><a href="{{route('welcome')}}">Home</a></h4>
     </div>
-    <div>
-      <h4><a href="{{route('about.me')}}">About me</a></h4>
+    <div class="text-center">
+      <h4><a href="{{route('about')}}">About</a></h4>
     </div>
-    <div>
+    <div class="text-center">
       <h4><a href="{{route('projects')}}">Projects</a></h4>
     </div>
-    <div class="flex items-center justify-end text-3xl">
-      <a href="">&#x2630;</a>
+    <div class="text-center">
+      <h4><a href="{{route('projects')}}">Github</a></h4>
     </div>
   </nav>
   <main class="pt-12">
