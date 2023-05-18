@@ -9,13 +9,13 @@
 </head>
 <body class="h-full bg-black/95 text-white">
   <nav class="fixed top-0 left-0 h-16 grid grid-cols-4 content-center w-full px-96">
-    <div class="text-center">
+    <div class="text-center @if($current['home']) underline @endif">
       <h5><a href="{{route('welcome')}}">@lang('Home')</a></h5>
     </div>
-    <div class="text-center">
+    <div class="text-center @if($current['about']) underline @endif">
       <h5><a href="{{route('about')}}">@lang('About')</a></h5>
     </div>
-    <div class="text-center">
+    <div class="text-center @if($current['projects']) underline @endif">
       <h5><a href="{{route('projects')}}">@lang('Projects')</a></h5>
     </div>
     <div class="flex justify-center items-center space-x-4">

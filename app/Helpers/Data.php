@@ -26,6 +26,11 @@ class Data
     $this->fillable['title'] = $title;
   }
 
+  public function current($current)
+  {
+    $this->fillable['current'] = $current;
+  }
+
   public function format()
   {
     $this->data = array();
